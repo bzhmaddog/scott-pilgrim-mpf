@@ -16,7 +16,7 @@ window:
   
 physical_rgb_dmds:
   my_dmd:
-     brightness: .7
+     brightness: .5
      platform: smartmatrix
 
 hardware:
@@ -27,6 +27,18 @@ smartmatrix:
   baud: 2500000
   old_cookie: true
 
+sound_system:
+    master_volume: 0.75
+    tracks:
+       bgm_attract:
+          simultaneous_sounds: 1
+          volume: 0.5
+          
+sounds:          
+    sfx_start:
+        file: game-start.ogg
+        volume: 0.85
+        
 switches:
     s_start:
         number: 10
@@ -93,7 +105,7 @@ keyboard:
     p:
         switch: s_plunger_lane
         toggle: true
-    l:
+    enter:
         switch: s_launch
     o:
         switch: s_right_inlane
@@ -157,7 +169,10 @@ virtual_platform_start_active_switches:
     s_trough3
     s_trough4
     s_trough5   
-   
+
+modes:
+  - base
+    
 slides:
   window_slide_1:  # slide we'll show in the on-screen window
   - type: color_dmd  # this widget shows the DMD content in this slide too
@@ -167,14 +182,14 @@ slides:
     text: SCOTT PILGRIM vs. The World
     anchor_y: top
     y: top-3
-    font_size: 30
+    font_size: 10
     font_name: Superfly    
     color: white
   - type: rectangle
     width: 514
     height: 130
     color: 444444
-  dmd_slide_1:  # slide we'll show on the physical DMD
+  dmd_attract:  # slide we'll show on the physical DMD
   - type: text
     y: top-7
     font_name: Superfly
@@ -208,17 +223,29 @@ slides:
               value: 0
               duration: .5s
               repeat: true
+
 slide_player:
   init_done:
     window_slide_1:
       target: window
   mode_attract_started:
-    dmd_slide_1:
+    dmd_attract:
       target: dmd
-  ball_started:
-    widgets:
-        type: text
-        text: PLAYER (number) BALL (ball)
-        style: dmd_small
-        y: bottom+3
-        color: e20005 
+  #ball_started:
+  #  widgets:
+  #      type: text
+  #      text: PLAYER (number) BALL (ball)
+  #      style: dmd_small
+  #      y: bottom+3
+  #      color: e20005 
+  
+sound_player:
+    mode_attract_started:
+        bgm_attract:
+            action: play
+            loops: -1
+    mode_attract_stopped:
+        bgm_attract:
+            action: stop
+        sfx_start:
+            action: play
