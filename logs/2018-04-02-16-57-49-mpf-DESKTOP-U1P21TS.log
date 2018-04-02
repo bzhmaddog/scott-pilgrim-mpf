@@ -1,0 +1,85 @@
+2018-04-02 16:57:49,414 : Machine : Mission Pinball Framework Core Engine v0.33.49
+2018-04-02 16:57:49,414 : Machine : Command line arguments: {'logfile': 'logs\\2018-04-02-16-57-49-mpf-DESKTOP-U1P21TS.log', 'mpfconfigfile': 'c:\\python34\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'bcp': True, 'create_config_cache': True, 'force_platform': None, 'syslog_address': None, 'pause': False, 'loglevel': 10, 'no_load_cache': False, 'force_assets_load': False, 'configfile': ['config'], 'consoleloglevel': 20, 'mc_file_name': None}
+2018-04-02 16:57:49,414 : Machine : MPF path: c:\python34\lib\site-packages\mpf
+2018-04-02 16:57:49,414 : Machine : Machine path: D:\Dev\mpf\scottp
+2018-04-02 16:57:49,414 : Machine : Platform: win32
+2018-04-02 16:57:49,414 : Machine : Python executable location: c:\python34\python.exe
+2018-04-02 16:57:49,414 : Machine : Python version: 3.4.4 (64-bit)
+2018-04-02 16:57:49,592 : Machine : Loading config from original files
+2018-04-02 16:57:49,595 : YAML File Interface : Loading file: c:\python34\lib\site-packages\mpf\mpfconfig.yaml
+2018-04-02 16:57:49,644 : Machine : Machine config file #1: D:\Dev\mpf\scottp\config\config
+2018-04-02 16:57:49,644 : YAML File Interface : Loading file: D:\Dev\mpf\scottp\config\config.yml
+2018-04-02 16:57:49,670 : Machine : Config file cache created: C:\Users\maddo\AppData\Local\Temp\f2725e9fdb5e5699b9561cedbbf1540fconfig
+2018-04-02 16:57:49,673 : asyncio : Using selector: SelectSelector
+2018-04-02 16:57:49,732 : Smart Virtual Platform : Configuring smart_virtual hardware interface.
+2018-04-02 16:57:49,735 : SmartMatrix : Configuring SmartMatrix RGB DMD hardware interface.
+2018-04-02 16:57:49,736 : SmartMatrix : Connecting to SmartMatrix RGB DMD on COM6 baud 2500000
+2018-04-02 16:57:49,811 : ShotProfileManager : Registering Shot Profile: 'default'
+2018-04-02 16:57:49,812 : ShotProfileManager : Processed 'default' profile configuration: {'loop': False, 'show': None, 'states': [{'sync_ms': None, 'show': 'off', 'loops': -1, 'action': 'play', 'priority': 0, 'name': 'unlit', 'manual_advance': None, 'speed': 1.0, 'start_step': 1, 'show_tokens': {}}, {'sync_ms': None, 'show': 'on', 'loops': -1, 'action': 'play', 'priority': 0, 'name': 'lit', 'manual_advance': None, 'speed': 1.0, 'start_step': 1, 'show_tokens': {}}], 'state_names_to_rotate': [], 'block': True, 'player_variable': '%_default', 'rotation_pattern': deque(['right']), 'advance_on_hit': True, 'state_names_to_not_rotate': [], 'show_when_disabled': False}
+2018-04-02 16:57:49,817 : SwitchController : Loading the SwitchController
+2018-04-02 16:57:49,955 : YAML File Interface : Loading file: D:\Dev\mpf\scottp\data/machine_vars.yaml
+2018-04-02 16:57:49,957 : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 0, 'change': 0, 'prev_value': 0}
+2018-04-02 16:57:49,957 : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.33.49', 'change': False, 'prev_value': 'MPF v0.33.49'}
+2018-04-02 16:57:49,957 : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.33.49, Config version:4, Show version: 4, BCP version:1.1', 'change': False, 'prev_value': 'MPF v0.33.49, Config version:4, Show version: 4, BCP version:1.1'}
+2018-04-02 16:57:49,957 : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.4.4', 'change': False, 'prev_value': '3.4.4'}
+2018-04-02 16:57:49,958 : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.16299', 'change': False, 'prev_value': 'Windows-10-10.0.16299'}
+2018-04-02 16:57:49,958 : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'change': False, 'prev_value': 'Windows'}
+2018-04-02 16:57:49,958 : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'change': False, 'prev_value': '10'}
+2018-04-02 16:57:49,958 : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.16299', 'change': False, 'prev_value': '10.0.16299'}
+2018-04-02 16:57:49,958 : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'change': False, 'prev_value': 'AMD64'}
+2018-04-02 16:57:49,958 : EventManager : Event: ======'init_phase_1'====== Args={}
+2018-04-02 16:57:50,197 : ball_device.bd_trough : Platform Driver: None
+2018-04-02 16:57:50,198 : ball_device.bd_trough : Configuring device with settings: '{'debug': True, 'eject_events': {}, 'mechanical_eject': False, 'eject_all_events': {}, 'eject_coil_jam_pulse': None, 'hold_coil_release_time': 1000, 'confirm_eject_type': 'target', 'entrance_switch_full_timeout': 0, 'retries_before_increasing_pulse': 4, 'console_log': 'full', 'exit_count_delay': 500, 'eject_coil_retry_pulse': None, 'max_eject_attempts': 0, 'captures_from': <playfield.playfield>, 'tags': ['trough', 'home', 'drain'], 'ball_capacity': None, 'target_on_unexpected_ball': None, 'jam_switch': <switch.s_trough_jam>, 'label': '%', 'request_ball_events': [], 'confirm_eject_switch': None, 'entrance_events': {}, 'entrance_switch': None, 'hold_events': {}, 'hold_switches': [], 'eject_timeouts': [], 'auto_fire_on_unexpected_ball': True, 'ball_missing_target': <playfield.playfield>, 'eject_targets': [<ball_device.bd_plunger>], 'ball_search_order': 200, 'ball_switches': [<switch.s_trough1>, <switch.s_trough2>, <switch.s_trough3>, <switch.s_trough4>, <switch.s_trough5>, <switch.s_trough_jam>], 'entrance_count_delay': 300, 'player_controlled_eject_event': None, 'file_log': 'full', 'confirm_eject_event': None, 'eject_coil': <coil.c_trough_eject>, 'hold_coil': None, 'ball_missing_timeouts': []}'
+2018-04-02 16:57:50,198 : ball_device.bd_plunger : Platform Driver: None
+2018-04-02 16:57:50,198 : ball_device.bd_plunger : Configuring device with settings: '{'debug': True, 'eject_events': {}, 'mechanical_eject': False, 'eject_all_events': {}, 'eject_coil_jam_pulse': None, 'hold_coil_release_time': 1000, 'eject_timeouts': [3000], 'entrance_switch_full_timeout': 0, 'retries_before_increasing_pulse': 4, 'console_log': 'full', 'exit_count_delay': 500, 'eject_coil_retry_pulse': None, 'max_eject_attempts': 0, 'captures_from': <playfield.playfield>, 'tags': ['ball_add_live'], 'ball_capacity': None, 'target_on_unexpected_ball': None, 'entrance_count_delay': 300, 'label': '%', 'request_ball_events': [], 'confirm_eject_switch': None, 'entrance_events': {}, 'entrance_switch': None, 'hold_events': {}, 'hold_switches': [], 'confirm_eject_type': 'target', 'auto_fire_on_unexpected_ball': True, 'ball_missing_target': <playfield.playfield>, 'eject_targets': [<playfield.playfield>], 'ball_search_order': 200, 'ball_switches': [<switch.s_plunger_lane>], 'ball_missing_timeouts': [], 'player_controlled_eject_event': 'sw_launch', 'file_log': 'full', 'confirm_eject_event': None, 'eject_coil': <coil.c_plunger_eject>, 'hold_coil': None, 'jam_switch': None}'
+2018-04-02 16:57:50,199 : Machine : Shutting down...
+2018-04-02 16:57:50,199 : EventManager : Event: ======'shutdown'====== Args={}
+2018-04-02 16:57:50,199 : asyncio : Unhandled error in exception handler
+context: {'message': "Exception in callback EventManager._done(<Task finishe...ot valid. ',)>)", 'exception': AssertionError('Config validation error: Entry ball_devices:bd_test:ball_switches:s_elevator_hold is not valid. ',), 'handle': <Handle EventManager._done(<Task finishe...ot valid. ',)>)>}
+Traceback (most recent call last):
+  File "c:\python34\lib\asyncio\events.py", line 125, in _run
+    self._callback(*self._args)
+  File "c:\python34\lib\site-packages\mpf\core\events.py", line 572, in _done
+    future.result()
+  File "c:\python34\lib\asyncio\futures.py", line 274, in result
+    raise self._exception
+  File "c:\python34\lib\asyncio\tasks.py", line 239, in _step
+    result = coro.send(None)
+  File "c:\python34\lib\site-packages\mpf\core\events.py", line 507, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "c:\python34\lib\site-packages\mpf\core\device_manager.py", line 80, in _load_device_modules
+    self.load_devices_config(validate=True)
+  File "c:\python34\lib\site-packages\mpf\core\device_manager.py", line 126, in load_devices_config
+    config[device_name] = collection[device_name].validate_and_parse_config(config[device_name], False)
+  File "c:\python34\lib\site-packages\mpf\core\device.py", line 68, in validate_and_parse_config
+    self.config_section, config, self.name, "device")
+  File "c:\python34\lib\site-packages\mpf\core\config_validator.py", line 164, in validate_config
+    validation_failure_info=(validation_failure_info, k))
+  File "c:\python34\lib\site-packages\mpf\core\config_validator.py", line 213, in validate_config_item
+    new_list.append(self.validate_item(i, validation, validation_failure_info))
+  File "c:\python34\lib\site-packages\mpf\core\config_validator.py", line 565, in validate_item
+    return self.validator_list[validator](item, validation_failure_info=validation_failure_info, param=param)
+  File "c:\python34\lib\site-packages\mpf\core\config_validator.py", line 327, in _validate_type_machine
+    self.validation_error(item, validation_failure_info)
+  File "c:\python34\lib\site-packages\mpf\core\config_validator.py", line 582, in validation_error
+    item, msg))
+AssertionError: Config validation error: Entry ball_devices:bd_test:ball_switches:s_elevator_hold is not valid. 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\python34\lib\asyncio\base_events.py", line 1122, in call_exception_handler
+    self._exception_handler(self, context)
+  File "c:\python34\lib\site-packages\mpf\core\machine.py", line 143, in _exception_handler
+    self.stop()
+  File "c:\python34\lib\site-packages\mpf\core\machine.py", line 709, in stop
+    self.events.process_event_queue()
+  File "c:\python34\lib\site-packages\mpf\core\events.py", line 615, in process_event_queue
+    **event[3])
+  File "c:\python34\lib\site-packages\mpf\core\events.py", line 584, in _process_event
+    result = self._run_handlers(event, ev_type, kwargs)
+  File "c:\python34\lib\site-packages\mpf\core\events.py", line 543, in _run_handlers
+    result = handler.callback(**merged_kwargs)
+  File "c:\python34\lib\site-packages\mpf\devices\ball_device\ball_device.py", line 146, in stop
+    self.ball_count_handler.stop()
+AttributeError: 'NoneType' object has no attribute 'stop'

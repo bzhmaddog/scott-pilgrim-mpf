@@ -1,0 +1,101 @@
+2018-04-02 13:45:39,137 : Machine : Mission Pinball Framework Core Engine v0.33.49
+2018-04-02 13:45:39,138 : Machine : Command line arguments: {'force_platform': None, 'pause': False, 'loglevel': 11, 'syslog_address': None, 'no_load_cache': False, 'create_config_cache': True, 'mpfconfigfile': 'c:\\python34\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'bcp': True, 'configfile': ['config'], 'mc_file_name': None, 'logfile': 'logs\\2018-04-02-13-45-39-mpf-DESKTOP-U1P21TS.log', 'consoleloglevel': 20, 'force_assets_load': False}
+2018-04-02 13:45:39,138 : Machine : MPF path: c:\python34\lib\site-packages\mpf
+2018-04-02 13:45:39,138 : Machine : Machine path: D:\Dev\mpf\scottp
+2018-04-02 13:45:39,138 : Machine : Platform: win32
+2018-04-02 13:45:39,138 : Machine : Python executable location: c:\python34\python.exe
+2018-04-02 13:45:39,138 : Machine : Python version: 3.4.4 (64-bit)
+2018-04-02 13:45:39,312 : Machine : Loading cached config: C:\Users\maddo\AppData\Local\Temp\f2725e9fdb5e5699b9561cedbbf1540fconfig
+2018-04-02 13:45:39,318 : SmartMatrix : Connecting to SmartMatrix RGB DMD on COM6 baud 2500000
+2018-04-02 13:45:39,344 : SwitchController : Loading the SwitchController
+2018-04-02 13:45:39,389 : EventManager : Event: ======'machine_var_mpf_version'====== Args={'change': False, 'prev_value': 'MPF v0.33.49', 'value': 'MPF v0.33.49'}
+2018-04-02 13:45:39,389 : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'change': False, 'prev_value': 'MPF v0.33.49, Config version:4, Show version: 4, BCP version:1.1', 'value': 'MPF v0.33.49, Config version:4, Show version: 4, BCP version:1.1'}
+2018-04-02 13:45:39,389 : EventManager : Event: ======'machine_var_python_version'====== Args={'change': False, 'prev_value': '3.4.4', 'value': '3.4.4'}
+2018-04-02 13:45:39,389 : EventManager : Event: ======'machine_var_platform'====== Args={'change': False, 'prev_value': 'Windows-10-10.0.16299', 'value': 'Windows-10-10.0.16299'}
+2018-04-02 13:45:39,389 : EventManager : Event: ======'machine_var_platform_system'====== Args={'change': False, 'prev_value': 'Windows', 'value': 'Windows'}
+2018-04-02 13:45:39,390 : EventManager : Event: ======'machine_var_platform_release'====== Args={'change': False, 'prev_value': '10', 'value': '10'}
+2018-04-02 13:45:39,390 : EventManager : Event: ======'machine_var_platform_version'====== Args={'change': False, 'prev_value': '10.0.16299', 'value': '10.0.16299'}
+2018-04-02 13:45:39,390 : EventManager : Event: ======'machine_var_platform_machine'====== Args={'change': False, 'prev_value': 'AMD64', 'value': 'AMD64'}
+2018-04-02 13:45:39,390 : EventManager : Event: ======'init_phase_1'====== Args={}
+2018-04-02 13:45:39,431 : Machine : Shutting down...
+2018-04-02 13:45:39,431 : EventManager : Event: ======'shutdown'====== Args={}
+2018-04-02 13:45:39,431 : asyncio : Unhandled error in exception handler
+context: {'handle': <Handle EventManager._done(<Task finishe...ot valid. ',)>)>, 'message': "Exception in callback EventManager._done(<Task finishe...ot valid. ',)>)", 'exception': AssertionError('Config validation error: Entry ball_devices:bd_plunger:eject_coil:c_plunger_eject is not valid. ',)}
+Traceback (most recent call last):
+  File "c:\python34\lib\asyncio\events.py", line 125, in _run
+    self._callback(*self._args)
+  File "c:\python34\lib\site-packages\mpf\core\events.py", line 572, in _done
+    future.result()
+  File "c:\python34\lib\asyncio\futures.py", line 274, in result
+    raise self._exception
+  File "c:\python34\lib\asyncio\tasks.py", line 239, in _step
+    result = coro.send(None)
+  File "c:\python34\lib\site-packages\mpf\core\events.py", line 507, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "c:\python34\lib\site-packages\mpf\core\device_manager.py", line 80, in _load_device_modules
+    self.load_devices_config(validate=True)
+  File "c:\python34\lib\site-packages\mpf\core\device_manager.py", line 126, in load_devices_config
+    config[device_name] = collection[device_name].validate_and_parse_config(config[device_name], False)
+  File "c:\python34\lib\site-packages\mpf\core\device.py", line 68, in validate_and_parse_config
+    self.config_section, config, self.name, "device")
+  File "c:\python34\lib\site-packages\mpf\core\config_validator.py", line 164, in validate_config
+    validation_failure_info=(validation_failure_info, k))
+  File "c:\python34\lib\site-packages\mpf\core\config_validator.py", line 205, in validate_config_item
+    validation_failure_info)
+  File "c:\python34\lib\site-packages\mpf\core\config_validator.py", line 565, in validate_item
+    return self.validator_list[validator](item, validation_failure_info=validation_failure_info, param=param)
+  File "c:\python34\lib\site-packages\mpf\core\config_validator.py", line 327, in _validate_type_machine
+    self.validation_error(item, validation_failure_info)
+  File "c:\python34\lib\site-packages\mpf\core\config_validator.py", line 582, in validation_error
+    item, msg))
+AssertionError: Config validation error: Entry ball_devices:bd_plunger:eject_coil:c_plunger_eject is not valid. 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\python34\lib\asyncio\base_events.py", line 1122, in call_exception_handler
+    self._exception_handler(self, context)
+  File "c:\python34\lib\site-packages\mpf\core\machine.py", line 143, in _exception_handler
+    self.stop()
+  File "c:\python34\lib\site-packages\mpf\core\machine.py", line 709, in stop
+    self.events.process_event_queue()
+  File "c:\python34\lib\site-packages\mpf\core\events.py", line 615, in process_event_queue
+    **event[3])
+  File "c:\python34\lib\site-packages\mpf\core\events.py", line 584, in _process_event
+    result = self._run_handlers(event, ev_type, kwargs)
+  File "c:\python34\lib\site-packages\mpf\core\events.py", line 543, in _run_handlers
+    result = handler.callback(**merged_kwargs)
+  File "c:\python34\lib\site-packages\mpf\devices\ball_device\ball_device.py", line 146, in stop
+    self.ball_count_handler.stop()
+AttributeError: 'NoneType' object has no attribute 'stop'
+2018-04-02 13:45:53,550 : Machine : Shutting down...
+2018-04-02 13:45:53,550 : EventManager : Event: ======'shutdown'====== Args={}
+2018-04-02 13:45:53,550 : asyncio : Unhandled error in exception handler
+context: {'handle': <TimerHandle when=872407.7815 SerialTransport._poll_read()>, 'message': 'Exception in callback SerialTransport._poll_read()', 'exception': SerialException("ClearCommError failed (OSError(22, 'L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.', None, 995))",)}
+Traceback (most recent call last):
+  File "c:\python34\lib\asyncio\events.py", line 125, in _run
+    self._callback(*self._args)
+  File "c:\python34\lib\site-packages\serial_asyncio\__init__.py", line 275, in _poll_read
+    if self.serial.in_waiting:
+  File "c:\python34\lib\site-packages\serial\serialwin32.py", line 257, in in_waiting
+    raise SerialException("ClearCommError failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: ClearCommError failed (OSError(22, 'L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.', None, 995))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\python34\lib\asyncio\base_events.py", line 1122, in call_exception_handler
+    self._exception_handler(self, context)
+  File "c:\python34\lib\site-packages\mpf\core\machine.py", line 143, in _exception_handler
+    self.stop()
+  File "c:\python34\lib\site-packages\mpf\core\machine.py", line 709, in stop
+    self.events.process_event_queue()
+  File "c:\python34\lib\site-packages\mpf\core\events.py", line 615, in process_event_queue
+    **event[3])
+  File "c:\python34\lib\site-packages\mpf\core\events.py", line 584, in _process_event
+    result = self._run_handlers(event, ev_type, kwargs)
+  File "c:\python34\lib\site-packages\mpf\core\events.py", line 543, in _run_handlers
+    result = handler.callback(**merged_kwargs)
+  File "c:\python34\lib\site-packages\mpf\devices\ball_device\ball_device.py", line 146, in stop
+    self.ball_count_handler.stop()
+AttributeError: 'NoneType' object has no attribute 'stop'

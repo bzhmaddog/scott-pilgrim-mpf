@@ -1,0 +1,45 @@
+2018-04-02 14:42:56,142 : Machine : Mission Pinball Framework Core Engine v0.33.49
+2018-04-02 14:42:56,142 : Machine : Command line arguments: {'mpfconfigfile': 'c:\\python34\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'bcp': True, 'no_load_cache': False, 'logfile': 'logs\\2018-04-02-14-42-56-mpf-DESKTOP-U1P21TS.log', 'consoleloglevel': 20, 'force_assets_load': False, 'pause': False, 'mc_file_name': None, 'force_platform': None, 'syslog_address': None, 'loglevel': 11, 'create_config_cache': True, 'configfile': ['config']}
+2018-04-02 14:42:56,142 : Machine : MPF path: c:\python34\lib\site-packages\mpf
+2018-04-02 14:42:56,142 : Machine : Machine path: D:\Dev\mpf\scottp
+2018-04-02 14:42:56,142 : Machine : Platform: win32
+2018-04-02 14:42:56,142 : Machine : Python executable location: c:\python34\python.exe
+2018-04-02 14:42:56,142 : Machine : Python version: 3.4.4 (64-bit)
+2018-04-02 14:42:56,321 : Machine : Loading config from original files
+2018-04-02 14:42:56,372 : Machine : Machine config file #1: D:\Dev\mpf\scottp\config\config
+2018-04-02 14:42:56,393 : root : Error found in file D:\Dev\mpf\scottp\config\config.yml
+Traceback (most recent call last):
+  File "c:\python34\lib\site-packages\mpf\file_interfaces\yaml_interface.py", line 272, in load
+    config = YamlInterface.process(f, round_trip)
+  File "c:\python34\lib\site-packages\mpf\file_interfaces\yaml_interface.py", line 303, in process
+    return Util.keys_to_lower(yaml.load(data_string, Loader=MpfLoader))
+  File "c:\python34\lib\site-packages\ruamel\yaml\main.py", line 75, in load
+    return loader.get_single_data()
+  File "c:\python34\lib\site-packages\ruamel\yaml\constructor.py", line 59, in get_single_data
+    return self.construct_document(node)
+  File "c:\python34\lib\site-packages\ruamel\yaml\constructor.py", line 68, in construct_document
+    for dummy in generator:
+  File "c:\python34\lib\site-packages\ruamel\yaml\constructor.py", line 481, in construct_yaml_map
+    value = self.construct_mapping(node)
+  File "c:\python34\lib\site-packages\mpf\file_interfaces\yaml_interface.py", line 143, in construct_mapping
+    raise KeyError("Key \"{}\" was defined multiple times in config.".format(key))
+KeyError: 'Key "s" was defined multiple times in config.'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\python34\lib\site-packages\mpf\commands\game.py", line 181, in __init__
+    MachineController(mpf_path, machine_path, vars(args)).run()
+  File "c:\python34\lib\site-packages\mpf\core\machine.py", line 96, in __init__
+    self._load_config()
+  File "c:\python34\lib\site-packages\mpf\core\machine.py", line 414, in _load_config
+    self._load_config_from_files()
+  File "c:\python34\lib\site-packages\mpf\core\machine.py", line 434, in _load_config_from_files
+    config_type='machine'))
+  File "c:\python34\lib\site-packages\mpf\core\config_processor.py", line 24, in load_config_file
+    config = FileManager.load(filename, verify_version, halt_on_error)
+  File "c:\python34\lib\site-packages\mpf\core\file_manager.py", line 165, in load
+    round_trip)
+  File "c:\python34\lib\site-packages\mpf\file_interfaces\yaml_interface.py", line 290, in load
+    raise ValueError("Error found in file %s" % filename)
+ValueError: Error found in file D:\Dev\mpf\scottp\config\config.yml

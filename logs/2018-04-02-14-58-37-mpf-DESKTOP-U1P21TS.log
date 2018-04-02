@@ -1,0 +1,77 @@
+2018-04-02 14:58:37,802 : Machine : Mission Pinball Framework Core Engine v0.33.49
+2018-04-02 14:58:37,802 : Machine : Command line arguments: {'consoleloglevel': 20, 'create_config_cache': True, 'syslog_address': None, 'loglevel': 10, 'force_platform': None, 'configfile': ['config'], 'mpfconfigfile': 'c:\\python34\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'logfile': 'logs\\2018-04-02-14-58-37-mpf-DESKTOP-U1P21TS.log', 'pause': False, 'mc_file_name': None, 'no_load_cache': False, 'force_assets_load': False, 'bcp': True}
+2018-04-02 14:58:37,803 : Machine : MPF path: c:\python34\lib\site-packages\mpf
+2018-04-02 14:58:37,803 : Machine : Machine path: D:\Dev\mpf\scottp
+2018-04-02 14:58:37,803 : Machine : Platform: win32
+2018-04-02 14:58:37,803 : Machine : Python executable location: c:\python34\python.exe
+2018-04-02 14:58:37,803 : Machine : Python version: 3.4.4 (64-bit)
+2018-04-02 14:58:37,974 : Machine : Loading config from original files
+2018-04-02 14:58:37,974 : YAML File Interface : Loading file: c:\python34\lib\site-packages\mpf\mpfconfig.yaml
+2018-04-02 14:58:38,022 : Machine : Machine config file #1: D:\Dev\mpf\scottp\config\config
+2018-04-02 14:58:38,023 : YAML File Interface : Loading file: D:\Dev\mpf\scottp\config\config.yml
+2018-04-02 14:58:38,042 : YAML File Interface : YAML error found in file D:\Dev\mpf\scottp\config\config.yml. Line 186, Position 14
+2018-04-02 14:58:38,042 : root : YAML error found in file D:\Dev\mpf\scottp\config\config.yml. Line 186, Position 14
+Traceback (most recent call last):
+  File "c:\python34\lib\site-packages\mpf\file_interfaces\yaml_interface.py", line 272, in load
+    config = YamlInterface.process(f, round_trip)
+  File "c:\python34\lib\site-packages\mpf\file_interfaces\yaml_interface.py", line 303, in process
+    return Util.keys_to_lower(yaml.load(data_string, Loader=MpfLoader))
+  File "c:\python34\lib\site-packages\ruamel\yaml\main.py", line 75, in load
+    return loader.get_single_data()
+  File "c:\python34\lib\site-packages\ruamel\yaml\constructor.py", line 57, in get_single_data
+    node = self.get_single_node()
+  File "c:\python34\lib\site-packages\ruamel\yaml\composer.py", line 46, in get_single_node
+    document = self.compose_document()
+  File "c:\python34\lib\site-packages\ruamel\yaml\composer.py", line 66, in compose_document
+    node = self.compose_node(None, None)
+  File "c:\python34\lib\site-packages\ruamel\yaml\composer.py", line 97, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "c:\python34\lib\site-packages\ruamel\yaml\composer.py", line 156, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "c:\python34\lib\site-packages\ruamel\yaml\composer.py", line 97, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "c:\python34\lib\site-packages\ruamel\yaml\composer.py", line 156, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "c:\python34\lib\site-packages\ruamel\yaml\composer.py", line 95, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "c:\python34\lib\site-packages\ruamel\yaml\composer.py", line 126, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+  File "c:\python34\lib\site-packages\ruamel\yaml\composer.py", line 97, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "c:\python34\lib\site-packages\ruamel\yaml\composer.py", line 156, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "c:\python34\lib\site-packages\ruamel\yaml\composer.py", line 97, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "c:\python34\lib\site-packages\ruamel\yaml\composer.py", line 156, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "c:\python34\lib\site-packages\ruamel\yaml\composer.py", line 95, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "c:\python34\lib\site-packages\ruamel\yaml\composer.py", line 125, in compose_sequence_node
+    while not self.check_event(SequenceEndEvent):
+  File "c:\python34\lib\site-packages\ruamel\yaml\parser_.py", line 118, in check_event
+    self.current_event = self.state()
+  File "c:\python34\lib\site-packages\ruamel\yaml\parser_.py", line 447, in parse_block_sequence_entry
+    token.id, token.start_mark)
+ruamel.yaml.parser_.ParserError: while parsing a block collection
+  in "D:\Dev\mpf\scottp\config\config.yml", line 185, column 13
+expected <block end>, but found '<block mapping start>'
+  in "D:\Dev\mpf\scottp\config\config.yml", line 186, column 14
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\python34\lib\site-packages\mpf\commands\game.py", line 181, in __init__
+    MachineController(mpf_path, machine_path, vars(args)).run()
+  File "c:\python34\lib\site-packages\mpf\core\machine.py", line 96, in __init__
+    self._load_config()
+  File "c:\python34\lib\site-packages\mpf\core\machine.py", line 414, in _load_config
+    self._load_config_from_files()
+  File "c:\python34\lib\site-packages\mpf\core\machine.py", line 434, in _load_config_from_files
+    config_type='machine'))
+  File "c:\python34\lib\site-packages\mpf\core\config_processor.py", line 24, in load_config_file
+    config = FileManager.load(filename, verify_version, halt_on_error)
+  File "c:\python34\lib\site-packages\mpf\core\file_manager.py", line 165, in load
+    round_trip)
+  File "c:\python34\lib\site-packages\mpf\file_interfaces\yaml_interface.py", line 281, in load
+    "Position {}".format(filename, mark.line + 1, mark.column + 1))
+ValueError: YAML error found in file D:\Dev\mpf\scottp\config\config.yml. Line 186, Position 14

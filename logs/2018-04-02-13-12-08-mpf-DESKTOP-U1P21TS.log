@@ -1,0 +1,77 @@
+2018-04-02 13:12:08,155 : Machine : Mission Pinball Framework Core Engine v0.33.49
+2018-04-02 13:12:08,155 : Machine : Command line arguments: {'consoleloglevel': 20, 'pause': False, 'logfile': 'logs\\2018-04-02-13-12-08-mpf-DESKTOP-U1P21TS.log', 'no_load_cache': False, 'force_assets_load': False, 'configfile': ['config'], 'force_platform': None, 'bcp': True, 'create_config_cache': True, 'syslog_address': None, 'loglevel': 11, 'mpfconfigfile': 'c:\\python34\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'mc_file_name': None}
+2018-04-02 13:12:08,155 : Machine : MPF path: c:\python34\lib\site-packages\mpf
+2018-04-02 13:12:08,155 : Machine : Machine path: D:\Dev\mpf\scottp
+2018-04-02 13:12:08,155 : Machine : Platform: win32
+2018-04-02 13:12:08,155 : Machine : Python executable location: c:\python34\python.exe
+2018-04-02 13:12:08,155 : Machine : Python version: 3.4.4 (64-bit)
+2018-04-02 13:12:08,331 : Machine : Loading config from original files
+2018-04-02 13:12:08,380 : Machine : Machine config file #1: D:\Dev\mpf\scottp\config\config
+2018-04-02 13:12:08,390 : Machine : Config file cache created: C:\Users\maddo\AppData\Local\Temp\f2725e9fdb5e5699b9561cedbbf1540fconfig
+2018-04-02 13:12:08,399 : SmartMatrix : Connecting to SmartMatrix RGB DMD on COM6 baud 2500000
+2018-04-02 13:12:08,425 : SwitchController : Loading the SwitchController
+2018-04-02 13:12:08,469 : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.33.49', 'change': False, 'prev_value': 'MPF v0.33.49'}
+2018-04-02 13:12:08,469 : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.33.49, Config version:4, Show version: 4, BCP version:1.1', 'change': False, 'prev_value': 'MPF v0.33.49, Config version:4, Show version: 4, BCP version:1.1'}
+2018-04-02 13:12:08,469 : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.4.4', 'change': False, 'prev_value': '3.4.4'}
+2018-04-02 13:12:08,470 : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.16299', 'change': False, 'prev_value': 'Windows-10-10.0.16299'}
+2018-04-02 13:12:08,470 : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'change': False, 'prev_value': 'Windows'}
+2018-04-02 13:12:08,470 : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'change': False, 'prev_value': '10'}
+2018-04-02 13:12:08,470 : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.16299', 'change': False, 'prev_value': '10.0.16299'}
+2018-04-02 13:12:08,470 : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'change': False, 'prev_value': 'AMD64'}
+2018-04-02 13:12:08,470 : EventManager : Event: ======'init_phase_1'====== Args={}
+2018-04-02 13:12:08,493 : EventManager : Event: ======'init_phase_2'====== Args={}
+2018-04-02 13:12:08,504 : BCPClientSocket.local_display : Connecting BCP to 'local_display' at localhost:5050...
+2018-04-02 13:12:10,009 : BCPClientSocket.local_display : Connected BCP to 'local_display' localhost:5050
+2018-04-02 13:12:10,014 : EventManager : Event: ======'init_phase_3'====== Args={}
+2018-04-02 13:12:10,018 : EventManager : Event: ======'init_phase_4'====== Args={}
+2018-04-02 13:12:10,021 : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'total': 0, 'average': 0, 'top': []}, 'change': False, 'prev_value': {'total': 0, 'average': 0, 'top': []}}
+2018-04-02 13:12:10,021 : EventManager : Event: ======'init_phase_5'====== Args={}
+2018-04-02 13:12:10,022 : EventManager : Event: ======'init_done'====== Args={}
+2018-04-02 13:12:10,023 : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2018-04-02 13:12:10,043 : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'change': 0.0, 'prev_value': 0.5}
+2018-04-02 13:12:10,044 : EventManager : Event: ======'slide_window_slide_1_removed'====== Args={'_from_bcp': True}
+2018-04-02 13:12:10,050 : EventManager : Event: ======'slide_window_slide_1_created'====== Args={'_from_bcp': True}
+2018-04-02 13:12:10,053 : EventManager : Event: ======'slide_dmd_slide_1_removed'====== Args={'_from_bcp': True}
+2018-04-02 13:12:10,055 : EventManager : Event: ======'slide_dmd_slide_1_created'====== Args={'_from_bcp': True}
+2018-04-02 13:12:10,057 : EventManager : Event: ======'slide_window_slide_1_active'====== Args={'_from_bcp': True}
+2018-04-02 13:12:10,057 : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2018-04-02 13:12:10,058 : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2018-04-02 13:12:10,058 : EventManager : Event: ======'slide_dmd_slide_1_active'====== Args={'_from_bcp': True}
+2018-04-02 13:12:10,058 : EventManager : Event: ======'reset_complete'====== Args={}
+2018-04-02 13:12:10,059 : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2018-04-02 13:12:10,059 : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2018-04-02 13:12:10,059 : Mode.attract : Started. Priority: 10
+2018-04-02 13:12:10,059 : EventManager : Event: ======'mode_attract_started'====== Args={}
+2018-04-02 13:12:10,059 : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2018-04-02 13:12:10,060 : Machine : Starting the main run loop.
+2018-04-02 13:12:16,006 : Machine : Shutting down...
+2018-04-02 13:12:16,006 : EventManager : Event: ======'shutdown'====== Args={}
+2018-04-02 13:12:16,006 : Machine : Shutting down...
+2018-04-02 13:12:16,007 : EventManager : Event: ======'shutdown'====== Args={}
+2018-04-02 13:12:16,007 : SmartMatrix : Disconnecting from SmartMatrix RGB DMD hardware...
+2018-04-02 13:12:16,007 : SmartMatrix : Disconnecting from SmartMatrix RGB DMD hardware...
+2018-04-02 13:12:16,007 : asyncio : Exception in callback SerialTransport._poll_read()
+handle: <TimerHandle when=870390.2185 SerialTransport._poll_read()>
+Traceback (most recent call last):
+  File "c:\python34\lib\asyncio\events.py", line 125, in _run
+    self._callback(*self._args)
+  File "c:\python34\lib\site-packages\serial_asyncio\__init__.py", line 275, in _poll_read
+    if self.serial.in_waiting:
+  File "c:\python34\lib\site-packages\serial\serialwin32.py", line 257, in in_waiting
+    raise SerialException("ClearCommError failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: ClearCommError failed (PermissionError(13, 'Le périphérique ne reconnaît pas la commande.', None, 22))
+2018-04-02 13:12:16,009 : root : ClearCommError failed (PermissionError(13, 'Le périphérique ne reconnaît pas la commande.', None, 22))
+Traceback (most recent call last):
+  File "c:\python34\lib\site-packages\mpf\commands\game.py", line 181, in __init__
+    MachineController(mpf_path, machine_path, vars(args)).run()
+  File "c:\python34\lib\site-packages\mpf\core\machine.py", line 694, in run
+    self._run_loop()
+  File "c:\python34\lib\site-packages\mpf\core\machine.py", line 735, in _run_loop
+    raise self._exception['exception']
+  File "c:\python34\lib\asyncio\events.py", line 125, in _run
+    self._callback(*self._args)
+  File "c:\python34\lib\site-packages\serial_asyncio\__init__.py", line 275, in _poll_read
+    if self.serial.in_waiting:
+  File "c:\python34\lib\site-packages\serial\serialwin32.py", line 257, in in_waiting
+    raise SerialException("ClearCommError failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: ClearCommError failed (PermissionError(13, 'Le périphérique ne reconnaît pas la commande.', None, 22))

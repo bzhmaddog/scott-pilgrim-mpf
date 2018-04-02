@@ -1,0 +1,51 @@
+2018-04-02 10:40:11,422 : Machine : Mission Pinball Framework Core Engine v0.33.49
+2018-04-02 10:40:11,422 : Machine : Command line arguments: {'configfile': ['config'], 'consoleloglevel': 20, 'force_platform': None, 'pause': False, 'loglevel': 11, 'mpfconfigfile': 'c:\\python34\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'create_config_cache': True, 'bcp': False, 'mc_file_name': None, 'logfile': 'logs\\2018-04-02-10-40-11-mpf-DESKTOP-U1P21TS.log', 'syslog_address': None, 'no_load_cache': False, 'force_assets_load': False}
+2018-04-02 10:40:11,422 : Machine : MPF path: c:\python34\lib\site-packages\mpf
+2018-04-02 10:40:11,422 : Machine : Machine path: D:\Dev\mpf\scottp
+2018-04-02 10:40:11,422 : Machine : Platform: win32
+2018-04-02 10:40:11,422 : Machine : Python executable location: c:\python34\python.exe
+2018-04-02 10:40:11,422 : Machine : Python version: 3.4.4 (64-bit)
+2018-04-02 10:40:11,593 : Machine : Loading config from original files
+2018-04-02 10:40:11,641 : Machine : Machine config file #1: D:\Dev\mpf\scottp\config\config
+2018-04-02 10:40:11,649 : Machine : Config file cache created: C:\Users\maddo\AppData\Local\Temp\f2725e9fdb5e5699b9561cedbbf1540fconfig
+2018-04-02 10:40:11,661 : SmartMatrix : Connecting to SmartMatrix RGB DMD on COM6 baud 2500000
+2018-04-02 10:40:11,684 : SwitchController : Loading the SwitchController
+2018-04-02 10:40:11,712 : EventManager : Event: ======'machine_var_mpf_version'====== Args={'change': False, 'prev_value': 'MPF v0.33.49', 'value': 'MPF v0.33.49'}
+2018-04-02 10:40:11,712 : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'change': False, 'prev_value': 'MPF v0.33.49, Config version:4, Show version: 4, BCP version:1.1', 'value': 'MPF v0.33.49, Config version:4, Show version: 4, BCP version:1.1'}
+2018-04-02 10:40:11,712 : EventManager : Event: ======'machine_var_python_version'====== Args={'change': False, 'prev_value': '3.4.4', 'value': '3.4.4'}
+2018-04-02 10:40:11,712 : EventManager : Event: ======'machine_var_platform'====== Args={'change': False, 'prev_value': 'Windows-10-10.0.16299', 'value': 'Windows-10-10.0.16299'}
+2018-04-02 10:40:11,712 : EventManager : Event: ======'machine_var_platform_system'====== Args={'change': False, 'prev_value': 'Windows', 'value': 'Windows'}
+2018-04-02 10:40:11,713 : EventManager : Event: ======'machine_var_platform_release'====== Args={'change': False, 'prev_value': '10', 'value': '10'}
+2018-04-02 10:40:11,713 : EventManager : Event: ======'machine_var_platform_version'====== Args={'change': False, 'prev_value': '10.0.16299', 'value': '10.0.16299'}
+2018-04-02 10:40:11,713 : EventManager : Event: ======'machine_var_platform_machine'====== Args={'change': False, 'prev_value': 'AMD64', 'value': 'AMD64'}
+2018-04-02 10:40:11,713 : EventManager : Event: ======'init_phase_1'====== Args={}
+2018-04-02 10:40:11,752 : SwitchController : Registering switch handler: s_left_flipper, <bound method ComboSwitch._switch_1_went_active of <combo_switch.both_flippers>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2018-04-02 10:40:11,753 : SwitchController : Registering switch handler: s_left_flipper, <bound method ComboSwitch._switch_1_went_inactive of <combo_switch.both_flippers>>, state: 0, ms: 0, info: False, cb_kwargs: {}
+2018-04-02 10:40:11,753 : SwitchController : Registering switch handler: s_right_flipper, <bound method ComboSwitch._switch_2_went_active of <combo_switch.both_flippers>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2018-04-02 10:40:11,753 : SwitchController : Registering switch handler: s_right_flipper, <bound method ComboSwitch._switch_2_went_inactive of <combo_switch.both_flippers>>, state: 0, ms: 0, info: False, cb_kwargs: {}
+2018-04-02 10:40:11,753 : SwitchController : Registering switch handler: s_left_flipper, <bound method TimedSwitch._activate of <timed_switch.flipper_cradle>>, state: 1, ms: 3000, info: True, cb_kwargs: {}
+2018-04-02 10:40:11,753 : SwitchController : Registering switch handler: s_left_flipper, <bound method TimedSwitch._deactivate of <timed_switch.flipper_cradle>>, state: 0, ms: 0, info: True, cb_kwargs: {}
+2018-04-02 10:40:11,753 : SwitchController : Registering switch handler: s_right_flipper, <bound method TimedSwitch._activate of <timed_switch.flipper_cradle>>, state: 1, ms: 3000, info: True, cb_kwargs: {}
+2018-04-02 10:40:11,753 : SwitchController : Registering switch handler: s_right_flipper, <bound method TimedSwitch._deactivate of <timed_switch.flipper_cradle>>, state: 0, ms: 0, info: True, cb_kwargs: {}
+2018-04-02 10:40:11,753 : EventManager : Event: ======'init_phase_2'====== Args={}
+2018-04-02 10:40:11,764 : EventManager : Event: ======'init_phase_3'====== Args={}
+2018-04-02 10:40:11,766 : EventManager : Event: ======'init_phase_4'====== Args={}
+2018-04-02 10:40:11,768 : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'change': False, 'prev_value': {'total': 0, 'average': 0, 'top': []}, 'value': {'total': 0, 'average': 0, 'top': []}}
+2018-04-02 10:40:11,768 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2018-04-02 10:40:11,768 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2018-04-02 10:40:11,769 : EventManager : Event: ======'init_phase_5'====== Args={}
+2018-04-02 10:40:11,769 : EventManager : Event: ======'init_done'====== Args={}
+2018-04-02 10:40:11,769 : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2018-04-02 10:40:11,770 : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2018-04-02 10:40:11,770 : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2018-04-02 10:40:11,770 : EventManager : Event: ======'reset_complete'====== Args={}
+2018-04-02 10:40:11,771 : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2018-04-02 10:40:11,771 : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2018-04-02 10:40:11,771 : Mode.attract : Started. Priority: 10
+2018-04-02 10:40:11,771 : EventManager : Event: ======'mode_attract_started'====== Args={}
+2018-04-02 10:40:11,771 : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2018-04-02 10:40:11,772 : Machine : Starting the main run loop.
+2018-04-02 10:40:26,814 : Machine : Shutting down...
+2018-04-02 10:40:26,814 : EventManager : Event: ======'shutdown'====== Args={}
+2018-04-02 10:40:26,815 : SmartMatrix : Disconnecting from SmartMatrix RGB DMD hardware...
+2018-04-02 10:40:26,819 : root : MPF run loop ended.

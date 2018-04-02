@@ -1,0 +1,51 @@
+2018-04-02 11:33:27,617 : Machine : Mission Pinball Framework Core Engine v0.33.49
+2018-04-02 11:33:27,617 : Machine : Command line arguments: {'configfile': ['config'], 'mc_file_name': None, 'logfile': 'logs\\2018-04-02-11-33-27-mpf-DESKTOP-U1P21TS.log', 'create_config_cache': True, 'mpfconfigfile': 'c:\\python34\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'loglevel': 11, 'pause': False, 'force_assets_load': False, 'syslog_address': None, 'consoleloglevel': 20, 'bcp': True, 'no_load_cache': False, 'force_platform': None}
+2018-04-02 11:33:27,617 : Machine : MPF path: c:\python34\lib\site-packages\mpf
+2018-04-02 11:33:27,617 : Machine : Machine path: D:\Dev\mpf\scottp
+2018-04-02 11:33:27,617 : Machine : Platform: win32
+2018-04-02 11:33:27,617 : Machine : Python executable location: c:\python34\python.exe
+2018-04-02 11:33:27,617 : Machine : Python version: 3.4.4 (64-bit)
+2018-04-02 11:33:27,789 : Machine : Loading cached config: C:\Users\maddo\AppData\Local\Temp\f2725e9fdb5e5699b9561cedbbf1540fconfig
+2018-04-02 11:33:27,799 : SmartMatrix : Connecting to SmartMatrix RGB DMD on COM6 baud 2500000
+2018-04-02 11:33:27,822 : SwitchController : Loading the SwitchController
+2018-04-02 11:33:27,864 : EventManager : Event: ======'machine_var_mpf_version'====== Args={'change': False, 'prev_value': 'MPF v0.33.49', 'value': 'MPF v0.33.49'}
+2018-04-02 11:33:27,865 : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'change': False, 'prev_value': 'MPF v0.33.49, Config version:4, Show version: 4, BCP version:1.1', 'value': 'MPF v0.33.49, Config version:4, Show version: 4, BCP version:1.1'}
+2018-04-02 11:33:27,865 : EventManager : Event: ======'machine_var_python_version'====== Args={'change': False, 'prev_value': '3.4.4', 'value': '3.4.4'}
+2018-04-02 11:33:27,865 : EventManager : Event: ======'machine_var_platform'====== Args={'change': False, 'prev_value': 'Windows-10-10.0.16299', 'value': 'Windows-10-10.0.16299'}
+2018-04-02 11:33:27,865 : EventManager : Event: ======'machine_var_platform_system'====== Args={'change': False, 'prev_value': 'Windows', 'value': 'Windows'}
+2018-04-02 11:33:27,865 : EventManager : Event: ======'machine_var_platform_release'====== Args={'change': False, 'prev_value': '10', 'value': '10'}
+2018-04-02 11:33:27,865 : EventManager : Event: ======'machine_var_platform_version'====== Args={'change': False, 'prev_value': '10.0.16299', 'value': '10.0.16299'}
+2018-04-02 11:33:27,865 : EventManager : Event: ======'machine_var_platform_machine'====== Args={'change': False, 'prev_value': 'AMD64', 'value': 'AMD64'}
+2018-04-02 11:33:27,866 : EventManager : Event: ======'init_phase_1'====== Args={}
+2018-04-02 11:33:27,888 : EventManager : Event: ======'init_phase_2'====== Args={}
+2018-04-02 11:33:27,899 : BCPClientSocket.local_display : Connecting BCP to 'local_display' at localhost:5050...
+2018-04-02 11:33:29,404 : BCPClientSocket.local_display : Connected BCP to 'local_display' localhost:5050
+2018-04-02 11:33:29,407 : EventManager : Event: ======'init_phase_3'====== Args={}
+2018-04-02 11:33:29,409 : EventManager : Event: ======'init_phase_4'====== Args={}
+2018-04-02 11:33:29,410 : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'change': False, 'prev_value': {'total': 0, 'top': [], 'average': 0}, 'value': {'total': 0, 'top': [], 'average': 0}}
+2018-04-02 11:33:29,411 : EventManager : Event: ======'init_phase_5'====== Args={}
+2018-04-02 11:33:29,411 : EventManager : Event: ======'init_done'====== Args={}
+2018-04-02 11:33:29,411 : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2018-04-02 11:33:29,430 : EventManager : Event: ======'machine_var_master_volume'====== Args={'change': 0.0, 'prev_value': 0.5, 'value': 0.5}
+2018-04-02 11:33:29,431 : EventManager : Event: ======'slide_dmd_slide_1_removed'====== Args={'_from_bcp': True}
+2018-04-02 11:33:29,431 : EventManager : Event: ======'slide_dmd_slide_1_created'====== Args={'_from_bcp': True}
+2018-04-02 11:33:29,434 : EventManager : Event: ======'slide_window_slide_1_removed'====== Args={'_from_bcp': True}
+2018-04-02 11:33:29,440 : EventManager : Event: ======'slide_window_slide_1_created'====== Args={'_from_bcp': True}
+2018-04-02 11:33:29,442 : EventManager : Event: ======'slide_dmd_slide_1_active'====== Args={'_from_bcp': True}
+2018-04-02 11:33:29,442 : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2018-04-02 11:33:29,443 : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2018-04-02 11:33:29,443 : EventManager : Event: ======'reset_complete'====== Args={}
+2018-04-02 11:33:29,443 : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2018-04-02 11:33:29,444 : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2018-04-02 11:33:29,444 : Mode.attract : Started. Priority: 10
+2018-04-02 11:33:29,444 : EventManager : Event: ======'mode_attract_started'====== Args={}
+2018-04-02 11:33:29,444 : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2018-04-02 11:33:29,445 : EventManager : Event: ======'slide_window_slide_1_active'====== Args={'_from_bcp': True}
+2018-04-02 11:33:29,445 : Machine : Starting the main run loop.
+2018-04-02 11:34:31,903 : Machine : Shutting down...
+2018-04-02 11:34:31,903 : EventManager : Event: ======'shutdown'====== Args={}
+2018-04-02 11:34:31,904 : Machine : Shutting down...
+2018-04-02 11:34:31,904 : EventManager : Event: ======'shutdown'====== Args={}
+2018-04-02 11:34:31,904 : SmartMatrix : Disconnecting from SmartMatrix RGB DMD hardware...
+2018-04-02 11:34:31,904 : SmartMatrix : Disconnecting from SmartMatrix RGB DMD hardware...
+2018-04-02 11:34:31,907 : root : MPF run loop ended.

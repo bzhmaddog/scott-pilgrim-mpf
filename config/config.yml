@@ -1,0 +1,224 @@
+#config_version=4
+
+displays:
+  window:  # on screen window
+    width: 600
+    height: 200
+  dmd:  # source display for the DMD
+    width: 128
+    height: 32
+    default: true
+
+window:
+  width: 600
+  height: 200
+  title: Scott Pilgrim Vs the World
+  
+physical_rgb_dmds:
+  my_dmd:
+     brightness: .7
+     platform: smartmatrix
+
+hardware:
+    rgb_dmd: smartmatrix
+    
+smartmatrix:
+  port: COM6
+  baud: 2500000
+  old_cookie: true
+
+switches:
+    s_start:
+        number: 10
+        tags: start
+    s_left_flipper:
+        number: SF4
+        tags: left_flipper
+    s_right_flipper:
+        number: SF2
+        tags: right_flipper
+    s_trough1:
+        number: s31
+        type: NC
+    s_trough2:
+        number: s32
+        type: NC
+    s_trough3:
+        number: s33
+        type: NC
+    s_trough4:
+        number: s34
+        type: NC
+    s_trough5:
+        number: s35
+        type: NC
+    s_trough_jam:
+        number: s36
+        type: NC
+    s_plunger_lane:
+        number: s27
+    s_launch:
+        number: s11
+        tags: launch
+    s_right_inlane:
+        number: 12
+        tags: playfield_active
+    s_test:
+        number: s1000
+        type: NC
+  
+  
+keyboard:
+    s:
+        switch: s_start
+    q:
+        switch: s_left_flipper
+    m:
+        switch: s_right_flipper       
+    1:
+        switch: s_trough1
+        toggle: true
+    2:
+        switch: s_trough2
+        toggle: true
+    3:
+        switch: s_trough3
+        toggle: true
+    4:
+        switch: s_trough4
+        toggle: true
+    5:
+        switch: s_trough5
+        toggle: true
+    p:
+        switch: s_plunger_lane
+        toggle: true
+    l:
+        switch: s_launch
+    o:
+        switch: s_right_inlane
+        
+        
+
+coils:
+    c_flipper_left_main:
+        number: FLLM
+        pulse_ms: 25
+    c_flipper_left_hold:
+        number: FLLH
+    c_flipper_right_main:
+        number: FLRM
+        pulse_ms: 25
+    c_flipper_right_hold:
+        number: FLRH
+    c_trough_eject:
+        number: c01
+        pulse_ms: 25
+    c_plunger_eject:
+        number: c03
+        pulse_ms: 25        
+      
+flippers:
+    left_flipper:
+        main_coil: c_flipper_left_main
+        hold_coil: c_flipper_left_hold
+        activation_switch: s_left_flipper
+    right_flipper:
+        main_coil: c_flipper_right_main
+        hold_coil: c_flipper_right_hold
+        activation_switch: s_right_flipper
+      
+ball_devices:
+  bd_trough:
+    tags: trough, home, drain
+    ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough_jam
+    eject_coil: c_trough_eject
+    eject_targets: bd_plunger
+    entrance_count_delay: 300ms
+    jam_switch: s_trough_jam
+    debug: true
+  bd_plunger:
+    ball_switches: s_plunger_lane
+    entrance_count_delay: 300ms
+    eject_timeouts: 3s
+    tags: ball_add_live
+    eject_coil: c_plunger_eject
+    player_controlled_eject_event: sw_launch
+    debug: true
+  bd_test:
+    ball_switches: s_test
+    mechanical_eject: true
+    eject_timeouts: 500ms
+    
+    
+virtual_platform_start_active_switches:
+    s_trough1
+    s_trough2
+    s_trough3
+    s_trough4
+    s_trough5   
+   
+slides:
+  window_slide_1:  # slide we'll show in the on-screen window
+  - type: color_dmd  # this widget shows the DMD content in this slide too
+    width: 512
+    height: 128
+  - type: text
+    text: SCOTT PILGRIM vs. The World
+    anchor_y: top
+    y: top-3
+    font_size: 30
+    font_name: Superfly    
+    color: white
+  - type: rectangle
+    width: 514
+    height: 130
+    color: 444444
+  dmd_slide_1:  # slide we'll show on the physical DMD
+  - type: text
+    y: top-7
+    font_name: Superfly
+    text: SCOTT PILGRIM
+    font_size: 20
+    #color: FF5820
+    color: e20005
+  - type: text
+    y: bottom+12
+    font_name: Dusty
+    text: VS. THE WORLD
+    font_size: 12
+    color: ffffff
+  - type: text
+    x: right-7
+    y: bottom+3
+    style: dmd_small
+    text: v0.1
+    color: ffffff
+  - type: text
+    y: bottom+3
+    style: dmd_small
+    text: (press start)
+    color: ffffff
+    animations:
+        show_slide:
+            - property: opacity
+              value: 1
+              duration: .5s
+            - property: opacity
+              value: 0
+              duration: .5s
+              repeat: true
+slide_player:
+  init_done:
+    window_slide_1:
+      target: window
+  mode_attract_started:
+    dmd_slide_1:
+      target: dmd
+  ball_started:
+    widgets:
+        type: text
+        text: PLAYER (number) BALL (ball)
+        style: dmd_small
+        y: bottom+3
+        color: e20005 

@@ -1,0 +1,37 @@
+2018-04-02 14:52:44,884 : kivy : Factory: 194 symbols loaded
+2018-04-02 14:52:44,962 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_gif (img_pil, img_ffpyplayer ignored)
+2018-04-02 14:52:44,990 : kivy : VideoGstplayer: Using Gstreamer 1.10.2.0
+2018-04-02 14:52:44,991 : kivy : Video: Provider: gstplayer
+2018-04-02 14:52:45,015 : kivy : Loading MPF-MC controller
+2018-04-02 14:52:45,015 : mpfmc : Mission Pinball Framework Media Controller v0.33.16
+2018-04-02 14:52:45,016 : mpfmc : Mission Pinball Framework Game Engine v0.33.49
+2018-04-02 14:52:45,016 : mpfmc : Machine path: D:\Dev\mpf\scottp
+2018-04-02 14:52:45,016 : mpfmc : Starting clock at 30.0Hz
+2018-04-02 14:52:45,025 : kivy : Text: Provider: sdl2
+2018-04-02 14:52:45,224 : kivy : OSC: using <thread> for socket
+2018-04-02 14:52:45,228 : kivy : Window: Provider: sdl2
+2018-04-02 14:52:45,427 : kivy : GL: Using the "OpenGL" graphics system
+2018-04-02 14:52:45,428 : kivy : GL: GLEW initialization succeeded
+2018-04-02 14:52:45,428 : kivy : GL: Backend used <glew>
+2018-04-02 14:52:45,429 : kivy : GL: OpenGL version <b'4.5.13497 Compatibility Profile Context 23.20.793.0'>
+2018-04-02 14:52:45,429 : kivy : GL: OpenGL vendor <b'ATI Technologies Inc.'>
+2018-04-02 14:52:45,429 : kivy : GL: OpenGL renderer <b'Radeon (TM) RX 480 Graphics'>
+2018-04-02 14:52:45,429 : kivy : GL: OpenGL parsed version: 4, 5
+2018-04-02 14:52:45,429 : kivy : GL: Shading version <b'4.50'>
+2018-04-02 14:52:45,429 : kivy : GL: Texture max size <16384>
+2018-04-02 14:52:45,429 : kivy : GL: Texture max units <32>
+2018-04-02 14:52:45,438 : kivy : Window: auto add sdl2 input provider
+2018-04-02 14:52:45,438 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2018-04-02 14:52:45,440 : SoundSystem : SoundSystem: Using default 'sound_system' settings
+2018-04-02 14:52:45,983 : AudioInterface : Initialized
+2018-04-02 14:52:45,983 : SoundSystem : No audio tracks are specified in your machine config file. a track named 'default' has been created.
+2018-04-02 14:52:45,985 : kivy : Base: Start application main loop
+2018-04-02 14:52:46,083 : MPF-MC BCP Server : Starting up on localhost port 5050
+2018-04-02 14:52:46,088 : MPF-MC BCP Server : Waiting for a connection...
+2018-04-02 14:52:46,114 : kivy : GL: NPOT texture support is available
+2018-04-02 14:52:46,443 : MPF-MC BCP Server : Received connection from: 127.0.0.1:52931
+2018-04-02 14:52:46,444 : mpfmc : Initializing Physical DMD
+2018-04-02 14:52:46,452 : mpfmc : Setting Physical DMD to 30.0fps
+2018-04-02 14:53:52,985 : mpfmc : Stopping...
+2018-04-02 14:53:53,267 : kivy : Base: Leaving application in progress...
+2018-04-02 14:53:53,267 : mpfmc : Loop rate 40.63 Hz

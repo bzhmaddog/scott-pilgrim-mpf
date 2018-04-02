@@ -1,0 +1,133 @@
+2018-04-02 14:43:37,451 : Machine : Mission Pinball Framework Core Engine v0.33.49
+2018-04-02 14:43:37,451 : Machine : Command line arguments: {'syslog_address': None, 'create_config_cache': True, 'mpfconfigfile': 'c:\\python34\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'configfile': ['config'], 'pause': False, 'force_platform': None, 'mc_file_name': None, 'no_load_cache': False, 'logfile': 'logs\\2018-04-02-14-43-37-mpf-DESKTOP-U1P21TS.log', 'force_assets_load': False, 'consoleloglevel': 20, 'bcp': True, 'loglevel': 11}
+2018-04-02 14:43:37,452 : Machine : MPF path: c:\python34\lib\site-packages\mpf
+2018-04-02 14:43:37,452 : Machine : Machine path: D:\Dev\mpf\scottp
+2018-04-02 14:43:37,452 : Machine : Platform: win32
+2018-04-02 14:43:37,452 : Machine : Python executable location: c:\python34\python.exe
+2018-04-02 14:43:37,452 : Machine : Python version: 3.4.4 (64-bit)
+2018-04-02 14:43:37,624 : Machine : Loading config from original files
+2018-04-02 14:43:37,673 : Machine : Machine config file #1: D:\Dev\mpf\scottp\config\config
+2018-04-02 14:43:37,695 : Machine : Config file cache created: C:\Users\maddo\AppData\Local\Temp\f2725e9fdb5e5699b9561cedbbf1540fconfig
+2018-04-02 14:43:37,704 : SmartMatrix : Connecting to SmartMatrix RGB DMD on COM6 baud 2500000
+2018-04-02 14:43:37,731 : SwitchController : Loading the SwitchController
+2018-04-02 14:43:37,774 : EventManager : Event: ======'machine_var_mpf_version'====== Args={'change': False, 'prev_value': 'MPF v0.33.49', 'value': 'MPF v0.33.49'}
+2018-04-02 14:43:37,774 : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'change': False, 'prev_value': 'MPF v0.33.49, Config version:4, Show version: 4, BCP version:1.1', 'value': 'MPF v0.33.49, Config version:4, Show version: 4, BCP version:1.1'}
+2018-04-02 14:43:37,774 : EventManager : Event: ======'machine_var_python_version'====== Args={'change': False, 'prev_value': '3.4.4', 'value': '3.4.4'}
+2018-04-02 14:43:37,775 : EventManager : Event: ======'machine_var_platform'====== Args={'change': False, 'prev_value': 'Windows-10-10.0.16299', 'value': 'Windows-10-10.0.16299'}
+2018-04-02 14:43:37,775 : EventManager : Event: ======'machine_var_platform_system'====== Args={'change': False, 'prev_value': 'Windows', 'value': 'Windows'}
+2018-04-02 14:43:37,775 : EventManager : Event: ======'machine_var_platform_release'====== Args={'change': False, 'prev_value': '10', 'value': '10'}
+2018-04-02 14:43:37,775 : EventManager : Event: ======'machine_var_platform_version'====== Args={'change': False, 'prev_value': '10.0.16299', 'value': '10.0.16299'}
+2018-04-02 14:43:37,775 : EventManager : Event: ======'machine_var_platform_machine'====== Args={'change': False, 'prev_value': 'AMD64', 'value': 'AMD64'}
+2018-04-02 14:43:37,775 : EventManager : Event: ======'init_phase_1'====== Args={}
+2018-04-02 14:43:37,819 : ball_device.bd_plunger : Platform Driver: None
+2018-04-02 14:43:37,819 : ball_device.bd_plunger : Configuring device with settings: '{'console_log': 'full', 'request_ball_events': [], 'tags': ['ball_add_live'], 'file_log': 'full', 'hold_events': {}, 'jam_switch': None, 'entrance_switch_full_timeout': 0, 'max_eject_attempts': 0, 'eject_events': {}, 'confirm_eject_switch': None, 'hold_coil': None, 'player_controlled_eject_event': 'sw_launch', 'ball_missing_target': <playfield.playfield>, 'hold_switches': [], 'eject_all_events': {}, 'eject_coil_jam_pulse': None, 'entrance_count_delay': 300, 'mechanical_eject': False, 'eject_targets': [<playfield.playfield>], 'entrance_switch': None, 'confirm_eject_event': None, 'ball_switches': [<switch.s_plunger_lane>], 'retries_before_increasing_pulse': 4, 'target_on_unexpected_ball': None, 'exit_count_delay': 500, 'confirm_eject_type': 'target', 'ball_missing_timeouts': [], 'eject_coil': <coil.c_plunger_eject>, 'ball_search_order': 200, 'auto_fire_on_unexpected_ball': True, 'eject_timeouts': [3000], 'debug': True, 'entrance_events': {}, 'eject_coil_retry_pulse': None, 'ball_capacity': None, 'captures_from': <playfield.playfield>, 'label': '%', 'hold_coil_release_time': 1000}'
+2018-04-02 14:43:37,820 : ball_device.bd_trough : Platform Driver: None
+2018-04-02 14:43:37,820 : ball_device.bd_trough : Configuring device with settings: '{'console_log': 'full', 'request_ball_events': [], 'tags': ['trough', 'home', 'drain'], 'file_log': 'full', 'hold_events': {}, 'jam_switch': <switch.s_trough_jam>, 'entrance_switch_full_timeout': 0, 'max_eject_attempts': 0, 'eject_events': {}, 'confirm_eject_switch': None, 'hold_coil': None, 'player_controlled_eject_event': None, 'ball_missing_target': <playfield.playfield>, 'hold_switches': [], 'eject_all_events': {}, 'eject_coil_jam_pulse': None, 'entrance_count_delay': 300, 'mechanical_eject': False, 'eject_targets': [<ball_device.bd_plunger>], 'entrance_switch': None, 'confirm_eject_event': None, 'ball_switches': [<switch.s_trough1>, <switch.s_trough2>, <switch.s_trough3>, <switch.s_trough4>, <switch.s_trough5>, <switch.s_trough_jam>], 'retries_before_increasing_pulse': 4, 'target_on_unexpected_ball': None, 'exit_count_delay': 500, 'confirm_eject_type': 'target', 'ball_missing_timeouts': [], 'eject_coil': <coil.c_trough_eject>, 'ball_search_order': 200, 'auto_fire_on_unexpected_ball': True, 'eject_timeouts': [], 'debug': True, 'entrance_events': {}, 'eject_coil_retry_pulse': None, 'ball_capacity': None, 'captures_from': <playfield.playfield>, 'label': '%', 'hold_coil_release_time': 1000}'
+2018-04-02 14:43:37,821 : ball_device.bd_plunger : EVENT: bd_trough to bd_plunger
+2018-04-02 14:43:37,822 : SwitchController : Registering switch handler: s_left_flipper, <bound method ComboSwitch._switch_1_went_active of <combo_switch.both_flippers>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2018-04-02 14:43:37,822 : SwitchController : Registering switch handler: s_left_flipper, <bound method ComboSwitch._switch_1_went_inactive of <combo_switch.both_flippers>>, state: 0, ms: 0, info: False, cb_kwargs: {}
+2018-04-02 14:43:37,822 : SwitchController : Registering switch handler: s_right_flipper, <bound method ComboSwitch._switch_2_went_active of <combo_switch.both_flippers>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2018-04-02 14:43:37,822 : SwitchController : Registering switch handler: s_right_flipper, <bound method ComboSwitch._switch_2_went_inactive of <combo_switch.both_flippers>>, state: 0, ms: 0, info: False, cb_kwargs: {}
+2018-04-02 14:43:37,822 : SwitchController : Registering switch handler: s_left_flipper, <bound method TimedSwitch._activate of <timed_switch.flipper_cradle>>, state: 1, ms: 3000, info: True, cb_kwargs: {}
+2018-04-02 14:43:37,822 : SwitchController : Registering switch handler: s_left_flipper, <bound method TimedSwitch._deactivate of <timed_switch.flipper_cradle>>, state: 0, ms: 0, info: True, cb_kwargs: {}
+2018-04-02 14:43:37,822 : SwitchController : Registering switch handler: s_right_flipper, <bound method TimedSwitch._activate of <timed_switch.flipper_cradle>>, state: 1, ms: 3000, info: True, cb_kwargs: {}
+2018-04-02 14:43:37,822 : SwitchController : Registering switch handler: s_right_flipper, <bound method TimedSwitch._deactivate of <timed_switch.flipper_cradle>>, state: 0, ms: 0, info: True, cb_kwargs: {}
+2018-04-02 14:43:37,823 : EventManager : Event: ======'init_phase_2'====== Args={}
+2018-04-02 14:43:37,834 : BCPClientSocket.local_display : Connecting BCP to 'local_display' at localhost:5050...
+2018-04-02 14:43:39,338 : BCPClientSocket.local_display : Connected BCP to 'local_display' localhost:5050
+2018-04-02 14:43:39,340 : SwitchController : Registering switch handler: s_plunger_lane, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x0000000007255D68>>, state: 1, ms: 300, info: False, cb_kwargs: {}
+2018-04-02 14:43:39,340 : SwitchController : Registering switch handler: s_plunger_lane, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x0000000007255D68>>, state: 0, ms: 500, info: False, cb_kwargs: {}
+2018-04-02 14:43:39,341 : ball_device.bd_plunger : Counted 0 balls. Active switches: []
+2018-04-02 14:43:39,342 : ball_device.bd_plunger : Waiting for eject request.
+2018-04-02 14:43:39,342 : SwitchController : Registering switch handler: s_trough1, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x0000000007263A90>>, state: 1, ms: 300, info: False, cb_kwargs: {}
+2018-04-02 14:43:39,343 : SwitchController : Registering switch handler: s_trough2, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x0000000007263A90>>, state: 1, ms: 300, info: False, cb_kwargs: {}
+2018-04-02 14:43:39,343 : SwitchController : Registering switch handler: s_trough3, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x0000000007263A90>>, state: 1, ms: 300, info: False, cb_kwargs: {}
+2018-04-02 14:43:39,343 : SwitchController : Registering switch handler: s_trough4, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x0000000007263A90>>, state: 1, ms: 300, info: False, cb_kwargs: {}
+2018-04-02 14:43:39,343 : SwitchController : Registering switch handler: s_trough5, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x0000000007263A90>>, state: 1, ms: 300, info: False, cb_kwargs: {}
+2018-04-02 14:43:39,343 : SwitchController : Registering switch handler: s_trough_jam, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x0000000007263A90>>, state: 1, ms: 300, info: False, cb_kwargs: {}
+2018-04-02 14:43:39,343 : SwitchController : Registering switch handler: s_trough1, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x0000000007263A90>>, state: 0, ms: 500, info: False, cb_kwargs: {}
+2018-04-02 14:43:39,344 : SwitchController : Registering switch handler: s_trough2, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x0000000007263A90>>, state: 0, ms: 500, info: False, cb_kwargs: {}
+2018-04-02 14:43:39,344 : SwitchController : Registering switch handler: s_trough3, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x0000000007263A90>>, state: 0, ms: 500, info: False, cb_kwargs: {}
+2018-04-02 14:43:39,344 : SwitchController : Registering switch handler: s_trough4, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x0000000007263A90>>, state: 0, ms: 500, info: False, cb_kwargs: {}
+2018-04-02 14:43:39,344 : SwitchController : Registering switch handler: s_trough5, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x0000000007263A90>>, state: 0, ms: 500, info: False, cb_kwargs: {}
+2018-04-02 14:43:39,344 : SwitchController : Registering switch handler: s_trough_jam, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x0000000007263A90>>, state: 0, ms: 500, info: False, cb_kwargs: {}
+2018-04-02 14:43:39,345 : ball_device.bd_trough : Counted 5 balls. Active switches: ['s_trough1', 's_trough2', 's_trough3', 's_trough4', 's_trough5']
+2018-04-02 14:43:39,346 : ball_device.bd_trough : Waiting for eject request.
+2018-04-02 14:43:39,353 : EventManager : Event: ======'init_phase_3'====== Args={}
+2018-04-02 14:43:39,360 : EventManager : Event: ======'init_phase_4'====== Args={}
+2018-04-02 14:43:39,362 : ball_device.bd_plunger : Counted 0 balls. Active switches: []
+2018-04-02 14:43:39,363 : ball_device.bd_trough : Counted 5 balls. Active switches: ['s_trough1', 's_trough2', 's_trough3', 's_trough4', 's_trough5']
+2018-04-02 14:43:39,366 : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2018-04-02 14:43:39,366 : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2018-04-02 14:43:39,367 : EventManager : Event: ======'machine_var_audits_switches_s_trough5'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2018-04-02 14:43:39,367 : EventManager : Event: ======'machine_var_audits_switches_s_trough4'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2018-04-02 14:43:39,367 : EventManager : Event: ======'machine_var_audits_switches_s_plunger_lane'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2018-04-02 14:43:39,368 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2018-04-02 14:43:39,368 : EventManager : Event: ======'machine_var_audits_switches_s_start'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2018-04-02 14:43:39,369 : EventManager : Event: ======'machine_var_audits_switches_s_trough3'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2018-04-02 14:43:39,369 : EventManager : Event: ======'machine_var_audits_switches_s_trough_jam'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2018-04-02 14:43:39,369 : EventManager : Event: ======'machine_var_audits_switches_s_launch'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2018-04-02 14:43:39,370 : EventManager : Event: ======'machine_var_audits_switches_s_trough2'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2018-04-02 14:43:39,370 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2018-04-02 14:43:39,370 : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'change': False, 'prev_value': {'total': 0, 'top': [], 'average': 0}, 'value': {'total': 0, 'top': [], 'average': 0}}
+2018-04-02 14:43:39,371 : EventManager : Event: ======'init_phase_5'====== Args={}
+2018-04-02 14:43:39,372 : EventManager : Event: ======'machine_var_master_volume'====== Args={'change': 0.0, 'prev_value': 0.5, 'value': 0.5}
+2018-04-02 14:43:39,373 : EventManager : Event: ======'init_done'====== Args={}
+2018-04-02 14:43:39,373 : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2018-04-02 14:43:39,399 : EventManager : Event: ======'slide_window_slide_1_removed'====== Args={'_from_bcp': True}
+2018-04-02 14:43:39,405 : EventManager : Event: ======'slide_window_slide_1_created'====== Args={'_from_bcp': True}
+2018-04-02 14:43:39,410 : EventManager : Event: ======'slide_dmd_slide_1_removed'====== Args={'_from_bcp': True}
+2018-04-02 14:43:39,412 : EventManager : Event: ======'slide_dmd_slide_1_created'====== Args={'_from_bcp': True}
+2018-04-02 14:43:39,414 : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2018-04-02 14:43:39,414 : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2018-04-02 14:43:39,414 : SwitchController : Found active switch: s_trough1
+2018-04-02 14:43:39,415 : SwitchController : Found active switch: s_trough5
+2018-04-02 14:43:39,415 : SwitchController : Found active switch: s_trough4
+2018-04-02 14:43:39,415 : SwitchController : Found active switch: s_trough3
+2018-04-02 14:43:39,415 : SwitchController : Found active switch: s_trough2
+2018-04-02 14:43:39,415 : EventManager : Event: ======'reset_complete'====== Args={}
+2018-04-02 14:43:39,415 : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2018-04-02 14:43:39,416 : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2018-04-02 14:43:39,416 : Mode.attract : Started. Priority: 10
+2018-04-02 14:43:39,416 : EventManager : Event: ======'mode_attract_started'====== Args={}
+2018-04-02 14:43:39,416 : SwitchController : Registering switch handler: s_start, <bound method Attract.start_button_pressed of <Mode.attract>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2018-04-02 14:43:39,416 : SwitchController : Registering switch handler: s_start, <bound method Attract.start_button_released of <Mode.attract>>, state: 0, ms: 0, info: False, cb_kwargs: {}
+2018-04-02 14:43:39,416 : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2018-04-02 14:43:39,417 : EventManager : Event: ======'slide_window_slide_1_active'====== Args={'_from_bcp': True}
+2018-04-02 14:43:39,417 : EventManager : Event: ======'slide_dmd_slide_1_active'====== Args={'_from_bcp': True}
+2018-04-02 14:43:39,417 : Machine : Starting the main run loop.
+2018-04-02 14:43:44,087 : Machine : Shutting down...
+2018-04-02 14:43:44,087 : EventManager : Event: ======'shutdown'====== Args={}
+2018-04-02 14:43:44,087 : Machine : Shutting down...
+2018-04-02 14:43:44,087 : EventManager : Event: ======'shutdown'====== Args={}
+2018-04-02 14:43:44,087 : ball_device.bd_plunger : Stopping ball device
+2018-04-02 14:43:44,087 : ball_device.bd_trough : Stopping ball device
+2018-04-02 14:43:44,088 : SmartMatrix : Disconnecting from SmartMatrix RGB DMD hardware...
+2018-04-02 14:43:44,088 : ball_device.bd_plunger : Stopping ball device
+2018-04-02 14:43:44,088 : ball_device.bd_trough : Stopping ball device
+2018-04-02 14:43:44,088 : SmartMatrix : Disconnecting from SmartMatrix RGB DMD hardware...
+2018-04-02 14:43:44,088 : asyncio : Exception in callback SerialTransport._poll_read()
+handle: <TimerHandle when=875878.3125 SerialTransport._poll_read()>
+Traceback (most recent call last):
+  File "c:\python34\lib\asyncio\events.py", line 125, in _run
+    self._callback(*self._args)
+  File "c:\python34\lib\site-packages\serial_asyncio\__init__.py", line 275, in _poll_read
+    if self.serial.in_waiting:
+  File "c:\python34\lib\site-packages\serial\serialwin32.py", line 257, in in_waiting
+    raise SerialException("ClearCommError failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: ClearCommError failed (PermissionError(13, 'Le périphérique ne reconnaît pas la commande.', None, 22))
+2018-04-02 14:43:44,090 : root : ClearCommError failed (PermissionError(13, 'Le périphérique ne reconnaît pas la commande.', None, 22))
+Traceback (most recent call last):
+  File "c:\python34\lib\site-packages\mpf\commands\game.py", line 181, in __init__
+    MachineController(mpf_path, machine_path, vars(args)).run()
+  File "c:\python34\lib\site-packages\mpf\core\machine.py", line 694, in run
+    self._run_loop()
+  File "c:\python34\lib\site-packages\mpf\core\machine.py", line 735, in _run_loop
+    raise self._exception['exception']
+  File "c:\python34\lib\asyncio\events.py", line 125, in _run
+    self._callback(*self._args)
+  File "c:\python34\lib\site-packages\serial_asyncio\__init__.py", line 275, in _poll_read
+    if self.serial.in_waiting:
+  File "c:\python34\lib\site-packages\serial\serialwin32.py", line 257, in in_waiting
+    raise SerialException("ClearCommError failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: ClearCommError failed (PermissionError(13, 'Le périphérique ne reconnaît pas la commande.', None, 22))
